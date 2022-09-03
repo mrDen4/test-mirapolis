@@ -1,0 +1,76 @@
+.structure {
+  padding: 0;
+}
+.structure li:last-child .item__line {
+  height: 65%;
+  top: -9px;
+  left: 26px;
+  width: 15%;
+}
+.structure li:last-child .item__line--folder {
+  display: none;
+}
+.structure .structure__item {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  margin-left: 50px;
+  position: relative;
+  padding-left: 15px;
+}
+.structure .structure__item--folder {
+  flex-direction: column;
+}
+.structure .structure__item--file {
+  padding-left: 60px;
+}
+.structure .item__about {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  padding: 0 0 0 45px;
+}
+.structure .item__about--active {
+  opacity: 1;
+  width: initial;
+  height: initial;
+}
+.structure .item__info {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.structure .item__img {
+  height: 25px;
+  z-index: 15;
+  margin-right: 5px;
+}
+.structure .item__btn {
+  background: #fff;
+  cursor: pointer;
+  z-index: 10;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+.structure .item__line {
+  position: absolute;
+}
+.structure .item__line--folder {
+  border-right: 1px dashed black;
+  width: 1px;
+  height: 100%;
+  left: 15%;
+  z-index: 10;
+}
+.structure .item__line--file {
+  border-bottom: 1px dashed black;
+  border-left: 1px dashed black;
+  width: 33px;
+  height: 100%;
+  left: 12%;
+  top: -24px;
+  z-index: 5;
+}

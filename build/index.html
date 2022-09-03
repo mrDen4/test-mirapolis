@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древовидная структура</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <ul class="structure">
+        <li class="structure__item structure__item--folder">
+            <div class="item__line item__line--folder"></div>
+            <div class="item__info">
+                <button class="item__btn">-</button>
+                <img src="./assets/images/folder.png" alt="folder 1" class="item__img">
+                <p class="item__text">Folder 1</p>
+            </div>
+            <div class="item__about item__about--active">
+                <div class="structure__item structure__item--file">
+                    <div class="item__line item__line--file"></div>
+                    <img src="./assets/images/file.png" alt="folder 1" class="item__img">
+                    <p class="item__text">Item 1.1</p>
+                </div>
+            </div>
+        </li>
+        <li class="structure__item structure__item--folder">
+            <div class="item__line item__line--folder"></div>
+            <div class="item__info">
+                <button class="item__btn">-</button>
+                <img src="./assets/images/folder.png" alt="folder 1" class="item__img">
+                <p class="item__text">Folder 2</p>
+            </div>
+            <div class="item__about item__about--active">
+                <div class="structure__item structure__item--folder">
+                    <div class="item__line item__line--folder"></div>
+                    <div class="item__info">
+                        <button class="item__btn">-</button>
+                        <img src="./assets/images/folder.png" alt="folder 1" class="item__img">
+                        <p class="item__text">Folder 2.1</p>
+                    </div>
+                    <div class="item__about item__about--active">
+                        <div class="structure__item structure__item--file">
+                            <div class="item__line item__line--file"></div>
+                            <img src="./assets/images/file.png" alt="folder 1" class="item__img">
+                            <p class="item__text">Item 2.1.1</p>
+                        </div>
+                        <div class="structure__item structure__item--file">
+                            <div class="item__line item__line--file"></div>
+                            <img src="./assets/images/file.png" alt="folder 1" class="item__img">
+                            <p class="item__text">Item 2.1.2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="structure__item structure__item--file">
+                    <div class="item__line item__line--file"></div>
+                    <img src="./assets/images/file.png" alt="folder 1" class="item__img">
+                    <p class="item__text">Item 2.2</p>
+                </div>
+            </div>
+        </li>
+        <li class="structure__item structure__item--folder">
+            <div class="item__line item__line--folder"></div>
+            <div class="item__info">
+                <button class="item__btn">+</button>
+                <img src="./assets/images/folder.png" alt="folder 1" class="item__img">
+                <p class="item__text">Folder 3</p>
+            </div>
+            <div class="item__about">
+                <div class="structure__item structure__item--file">
+                    <div class="item__line item__line--file"></div>
+                    <img src="./assets/images/file.png" alt="folder 1" class="item__img">
+                    <p class="item__text">Item 3.1</p>
+                </div>
+            </div>
+        </li>
+        <li class="structure__item structure__item--file">
+            <div class="item__line item__line--file"></div>
+            <div class="item__info">
+                <img src="./assets/images/file.png" alt="folder 1" class="item__img">
+                <p class="item__text">File 4</p>
+            </div>
+        </li>
+    </ul>
+    <script src="./assets/scripts/jquery.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+</html>
